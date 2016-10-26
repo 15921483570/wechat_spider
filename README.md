@@ -41,3 +41,5 @@ func main() {
 
   [1]: https://github.com/sundy-li/wechat_spider/blob/master/examples/simple_server.go
   [2]: https://github.com/sundy-li/wechat_spider/blob/master/examples/custom_output_server.go
+
+- 微信会屏蔽频繁的请求,所以历史文章的翻页请求调用了Sleep()方法, 默认每个请求休眠50ms,可以根据实际情况自定义Processor覆盖此方法
